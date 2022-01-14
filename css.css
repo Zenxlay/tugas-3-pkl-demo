@@ -4,24 +4,26 @@
   }
   
   body {
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     overflow-x: hidden;
+    background-color: #1b1b1b;
   }
   
   nav {
     position: sticky;
     display: flex;
-    background: #fa471f;
+    background: #f0cc2d;
     justify-content: space-between;
     padding: 0 30px;
     height: 80px;
     align-items: center;
-    color: white;
+    color: rgb(17, 17, 17);
   }
   
   nav .logo {
     font-weight: 900;
     font-size: 48px;
+    font-family: 'Ubuntu', sans-serif;
   }
   
   nav ul {
@@ -32,50 +34,50 @@
   }
   nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
+    color: rgb(12, 12, 12);
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.3s;
   }
   
-  
-  .bg-mid p {
-    text-align: center;
-    position: relative;
-    margin-top: 390px;
-    font-size: 50px;
-    color: white;
+  nav ul li a:hover {
+  background-color: #ac9636;
+  font-size: 25px;
   }
+  
+
   
   .bg-mid {
     position: absolute;
     width: 1440px;
-    height: 800px;
+    height: 670px;
     left: 0px;
     top: 0px;
     z-index: -2;
     background: url(assets/default-banner.png);
+    
+    
   }
   
-  
-  .about {
-    margin-top: 870px;
+  .ingfo {
+    margin-top: 50px;
     margin-left: 62px;
   }
   
-  .about h1 {
-    color: #fa471f;
-    font-size: 48px;
-  }
-  
-  .about p {
+  .ingfo p {
     width: 1156px;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 42px;
+    margin-top: 220px;
+    color: #e6e6e6;
+    font-family: 'Ubuntu', sans-serif;
   }
   
-  .best-week h1 {
-    font-size: 48px;
-    color: #fa471f;
-    margin-top: 100px;
+  .minggu h1 {
+    font-size: 38px;
+    color: #ac9636;
+    margin-top: 310px;
     margin-left: 62px;
   }
   
@@ -97,10 +99,9 @@
   .best img:hover {
     transform: scale(1.15);
   }
-  
   .film-anak h1 {
-    font-size: 48px;
-    color: #fa471f;
+    font-size: 38px;
+    color: #ac9636;
     margin-top: 100px;
     margin-left: 62px;
   }
@@ -126,82 +127,73 @@
   }
   
   .kontak {
-    margin-top: 100px;
-  }
-  .kontak img {
-    width: 720px;
-    height: 506px;
-  }
-  
-  .kontak h1 {
-    position: absolute;
-    left: 780px;
-    top: 2800px;
-    font-size: 48px;
-    color: #fa471f;
-  }
-  
-  .kontak p {
-    position: absolute;
-    left: 780px;
-    top: 2850px;
-    width: 550px;
-    font-size: 20px;
-    color: #fa471f;
-  }
-  
-  .border {
-    position: absolute;
-    left: 780px;
-    top: 2950px;
-    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.kontak .gambar img {
+    width: 700px;
+    height: 600px;
+}
+
+.form {
+    margin-left: 20px;
+}
+
+.form h1 {
+    color: #ac9636;
+    font-size: 50px;
+}
+
+.form p {
+    margin-left: 8px;
+    color: white;
+}
+
+.form input {
+    border-color: rgb(212, 176, 55);
+    border-radius: 3px;
+    width: 530px;
     height: 40px;
-    border: 5px solid #fa471f;
-    border-radius: 10px;
-  }
-  
-  .border h3 {
-    margin: 5px 10px;
-    font-size: 24px;
-    color: #fa471f;
-  }
-  
-  .bg-kontak {
-    position: absolute;
-    left: 995px;
-    top: 3050px;
-    background: #fa471f;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-  }
-  
-  .bg-kontak h4 {
-    text-align: center;
-    margin: 15px;
-    color: white;
-  }
-  
-  footer {
-    background: #fa471f;
-    position: absolute;
-    height: auto;
-    margin-top: 100px;
-    left: 0;
-    right: 0;
-    height: 100px;
-    color: white;
-  }
-  .footercontent {
+    margin-top: 11px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 8px;
+}
+
+#kirim {
+    margin-left: 40%;
+    margin-top: 17px;
+    border: none;
+    box-sizing: border-box;
+    padding: 9px;
+    color: black;
+    background-color: #ac9636;
+    border-radius: 3px;
+    transition: 0.3s;
+    font-size: 23px;
+}
+
+#kirim:hover {
+    background-color: rgb(145, 113, 46);
+    transform: scale(1.15);
+}
+
+.footer {
+    background-color: #ac9636;
+    height: 60px;
     display: flex;
     justify-content: center;
-    text-align: center;
-  }
-  
-  .footercontent p {
-    position: absolute;
-    line-height: 20px;
-    font-size: 14px;
-    bottom: 0;
-    font-size: 18px;
-  }
+    align-items: center;
+    margin-top: -6px;
+}
+
+.footer p {
+    color: rgb(14, 14, 14);
+    font-size: 16px;
+}
+
+.content-description h1 {
+    color: darkblue;
+}
